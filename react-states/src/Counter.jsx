@@ -3,7 +3,7 @@ export default function Counter()
 
     let count = 0;
 
-    function inrCounyter()
+    function inrCount()
     {
         count += 1;
         console.log(count);
@@ -12,7 +12,7 @@ export default function Counter()
     return(
         <div>
             <h3>Count : {count}</h3>
-            <button>Increase Counting</button>
+            <button onClick={inrCount}>Increase Counting</button>
         </div>
     )
 
