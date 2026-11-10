@@ -1,13 +1,17 @@
+import { useState } from "react";
+
+
 export default function Counter()
 {
 
-    let count = 0;
+    let [count, setCount] = useState(0);
 
-    function inrCount()
+    let inrCount = () =>
     {
-        count += 1;
-        console.log(count);
+        setCount(count+1);
+    
     }
+    
 
     return(
         <div>
